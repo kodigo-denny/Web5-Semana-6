@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var categoria = Number(prompt("Ingrese la categoria:"))
+        var sueldo = Number(prompt("Ingrese el sueldo actual:"))
+
+        var nuevo = undefined;
+
+        switch(categoria){
+            case 1:
+                nuevo = sueldo * 1.15
+            break
+            case 2:
+                nuevo = sueldo * 1.10
+            break;
+            case 3:
+                nuevo = sueldo * 1.08
+            break;
+            case 4:
+                nuevo = sueldo * 1.07
+            break;
+            default:
+                alert("No existe la categoria")
+            break;
+        }
+
+        if(nuevo != undefined)
+            alert("El nuevo sueldo es: " + nuevo)
+            
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

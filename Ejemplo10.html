@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var clave = Number (prompt("Ingrese la clave"))
+        var minutos = Number (prompt("Ingrese Minutos"))
+        var costo = undefined
+        switch(clave){
+            case 12:
+                costo =2
+                break
+            case 15:
+                costo=2.2
+            break
+            case 18:
+                costo=4.5
+            break
+            case 19:
+                costo=3.5
+            break
+            case 23:
+            case 25:
+                costo=6
+            break
+            case 29:
+                costo=5
+            break
+        
+        }
+        var total = costo*minutos
+        if( minutos<30)
+            total = total - total*.10
+
+        if(costo != undefined)
+            alert("Total a pagar" + total)
+        else
+            alert("No ingreso una clave valida")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

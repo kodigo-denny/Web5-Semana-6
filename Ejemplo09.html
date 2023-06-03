@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var precio = Number (prompt ("Ingrese el precio"))
+        if (precio<0)
+            alert("Ingreso un precio incorrecto")
+            else if (precio<=20)
+                alert("No genera impuesto")
+                else if(precio<=40)
+                    alert("impuesto a pagar: "+ precio*.30)
+                    else if(precio<=500)
+                        alert("Impuesto a pagar: "+ precio*0.4)
+                        else 
+                            alert("Impuesto a pagar: "+ precio*.5)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
